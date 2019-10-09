@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
 
 
 
@@ -23,25 +24,8 @@ const notes = [
       date: '2019-05-30T19:20:14.298Z',
       important: true
     }
-  ]
-  
-  const App = (props) => {
- const { notes } = props
-  const rows = () => notes.map(note =>
-    <li key={note.id}>
-      {note.content}
-    </li>
-  )
-  
-    return (
-      <div>
-        <h1>Notes</h1>
-        <ul>
-          {rows()}
-        </ul>
-      </div>
-    )
-  }
+  ];
+
   
   
   ReactDOM.render(
